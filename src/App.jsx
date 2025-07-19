@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import { DataProvider } from "./components/context/DataContext";
 import { ColorProvider } from "./components/context/ColorContext";
 import Footer from "./components/Footer";
+import Services from "./components/Services";
+import sampleData from "./components/mockData/sampleData";
 
 const App = () => {
   return (
@@ -13,12 +15,14 @@ const App = () => {
       <DataProvider>
         <ColorProvider>
           <Router>
-            <Navbar />
             <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/second_page" element={<Secondpage />} />
+              <Route>
+              </Route>
             </Routes>
+            <sampleData />
+            <Navbar />
             <Footer />
+            <Services />
           </Router>
         </ColorProvider>
       </DataProvider>

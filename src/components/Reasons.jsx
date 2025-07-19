@@ -1,7 +1,8 @@
 import React from "react";
 
 const Reasons = () => {
-  return <div>Reasons</div>;
+  return 
+  <section>Reasons</section>;
 };
 
 export default Reasons;

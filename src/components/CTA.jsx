@@ -1,7 +1,9 @@
 import React from "react";
 
 const CTA = () => {
-  return <div>CTA</div>;
+  return 
+  <section
+  >CTA</section>;
 };
 
 export default CTA;
