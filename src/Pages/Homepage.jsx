@@ -1,18 +1,24 @@
 import React from "react";
-import Header from "../components/Hero";
-import Info from "../components/Info";
-import Testimonials from "../components/Testimonials";
-import Hero from "../components/Hero";
-import { useData } from "../components/context/DataContext";
+import NavBar from "../components/NavBar";
+import Hero from "./../components/Hero";
+import Info from "./../components/Info";
+import Services from "../components/Services";
+import CTA from "./../components/CTA";
+import Testimonials from "./../components/Testimonials";
+import Reasons from "./../components/Reasons";
+import Footer from "./../components/Footer";
 
 const Homepage = () => {
-  const { stats, services } = useData();
-  
   return (
     <main>
+      <NavBar/>
       <Hero />
       <Info />
+      <Services />
+      <Reasons /> 
+      <CTA /> 
       <Testimonials />
+      <Footer />
     </main>
   );
 };

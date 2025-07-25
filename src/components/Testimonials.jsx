@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Button from "./mini-components/Button";
+import Heading from "./mini-components/Heading";
 
 const Testimonials = () => {
   const testimonialData = [
@@ -28,42 +30,59 @@ const Testimonials = () => {
     },
   ];
 
-  if (!testimonialData || testimonialData.length === 0) {
+  if (testimonialData.length === 0) {
     return (
-      <div className="font-bold text-3xl text-red-500 capitalize min-h-50 flex items-center">
-        No testimonials available
+      <div className="font-bold text-3xl text-red-500 capitalize min-h-50 flex items-center justify-center">
+        No data points in the response
       </div>
     );
   }
 
-  return (
-    <section className="min-h-screen">
-      <div>
-        <h2 className="text-[36px] font-bold leading-6">
-          What people say about us
-        </h2>
-        <p className="font-light text-[19px]">
-          With lots of unique blocks, you can easily build a page without
-          coding. Build your next landing page.
-        </p>
+  if (!testimonialData) {
+    return (
+      <div className="font-bold text-3xl text-red-500 capitalize min-h-[50vh] flex items-center justify-center">
+        Data did not come
       </div>
-
-      <div className="grid grid-cols-3 gap-4">
-        {testimonialData.map(({ id, userImg, quote, userName, userJD }) => (
-          <div key={id} className="p-4 border rounded">
-            <img src={userImg} alt={userName} className="mb-2" />
-            <p className="mb-2">{quote}</p>
-            <div>
-              <span className="font-semibold">{userName}</span>
-              <span className="block text-sm text-gray-500">{userJD}</span>
+    );
+  }
+  return (
+    <section className="text-brainyWaveBlack lg:mt-26 mt-12">
+      <div className="px-4 md:px-10 lg:px-0 mb-5 ">
+        <div className="flex items-center justify-center flex-col">
+          <h2 className="text-[36px] font-bold leading-6 mb-4 text-center">
+            What people say about us
+          </h2>
+          <p className="font-light text-[19px] lg:w-[40%] w-[100%] text-center">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-3 grid-cols-1 lg:w-[60%] w-[100%] mx-auto lg:mt-14 mt-10 gap-10">
+          {testimonialData.map(({ id, userImg, quote, userName, userJD }) => (
+            <div
+              key={id}
+              className="border-[#E7E9ED] border-[1px] border-solid p-10"
+            >
+              <img src={userImg} alt={userName} />
+              <p className="my-7">{quote}</p>
+              <div className="flex justify-between items-center">
+                <span className="font-bold">{userName}</span>
+                <span>{userJD}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </div>
+      <div className="bg-brainyGreen lg:h-[170px] min-h-[20vh] flex lg:flex-row flex-col items-center justify-center text-white lg:mt-26 gap-10">
+        <h4 className="font-bold text-[32px] leading-[44px]">
+          Ready to get started?
+        </h4>
+        <button className="font-bold text-[17px] leading-[32px] bg-white lg:w-[200px] w-[80%] text-brainyWaveBlack">
+          Get A Free Quote
+        </button>
       </div>
     </section>
   );
 };
 
 export default Testimonials;
-
-

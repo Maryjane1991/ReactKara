@@ -1,28 +1,60 @@
 import React from "react";
 
 const Services = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Digital Marketing",
-      desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-      img: "/Rectangle (3).svg",
-    },
-    {
-      id: 2,
-      title: "Business Growth",
-      desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-      img: "/business_growth.svg",
-    },
-    {
-      id: 3,
-      title: "Content Marketing",
-      desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-      img: "/content.svg",
-    },
-  ];
-
-  return <div>Services</div>;
+  creturn(
+    <section className="px-5 md:px-20 my-10 lg:my-0">
+      <div className="items-center justify-center lg:px-[300px]">
+        <h2 className="font-bold text-4xl leading-[48px] text-center">
+          Services we offer for you
+        </h2>
+        <p className=" text-[19px] leading-[32px] lg:w-[580px] w-[100%] text-center">
+          With lots of unique blocks, you can easily build a page without
+          coding. Build your next landing page.
+        </p>
+      </div>
+      <div className="grid lg:grid-cols-3 grid-cols-1 w-[100%] lg:w-[60%] mx-auto lg:mt-14 mt-4 gap-10 md:items-center md:justify-center">
+        <div>
+          <h3 className="font-bold text-[21px] leading-[32px]">
+            Digital Marketing
+          </h3>
+          <img src="/Rectangle.svg" alt="" />
+          <p className="text-[17px] leading-[29px]">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+          <button className="font-bold text-[17px] leading-[32px] text-brainyWavePurple">
+            Learn more
+          </button>
+        </div>
+        <div>
+          <h3 className="font-bold text-[21px] leading-[32px]">
+            Business Growth
+          </h3>
+          <img src="/Rectangle 2.svg" alt="" />
+          <p className="text-[17px] leading-[29px]">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+          <button className="font-bold text-[17px] leading-[32px] text-brainyWavePurple">
+            Learn more
+          </button>
+        </div>
+        <div>
+          <h3 className="font-bold text-[21px] leading-[32px]">
+            Content Marketing
+          </h3>
+          <img src="/Rectangle 3.svg" alt="" />
+          <p className="text-[17px] leading-[29px]">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+          <button className="font-bold text-[17px] leading-[32px] text-brainyWavePurple">
+            Learn more
+          </button>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Services;

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       style={{ backgroundImage: "hero_pattern.svg" }}
-      className="min-h-screen px-[213px] grid grid-cols-2 items-center gap-[150px] mt-12"
+      className="min-h-screen lg:px-[213px] md:px-20 px-4 grid lg:grid-cols-2 grid-cols-1 items-center lg:gap-[150px]md:gap-20 gap-10  mt-20"
     >
       <div>
         <h1 className="font-bold text-5xl leading-[58px]">
@@ -17,10 +17,10 @@ const Hero = () => {
         </p>
         <Button
           btnText={`Get A Free Quote`}
-          className="w-[200px] h-[59px] mt-8"
+          className="w-[200px] h-[59px] w-[100%] mt-8"
         />
 
-        <span className="text-sm font-bold block mt-7">
+        <span className="text-sm font-bold block lg:mt-7 md:mt-7 mt-4 text-center">
           Watch how we can help
         </span>
       </div>

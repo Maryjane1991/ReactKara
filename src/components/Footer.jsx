@@ -1,67 +1,57 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  return 
-  <div>
-    <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto text-center">
-        <h2>Brainwave.io</h2>
-        <p>With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
+  rreturn(
+    <section className="grid lg:grid-cols-5 grid-cols-1 bg-brainyWaveBlack lg:px-20 lg:py-[120px] p-5 lg:gap-x-10 gap-x-5">
+      <div className="lg:w-[24%] w-[100%]">
+        <Link to="/" className="font-rubik font-bold text-[28px]">
+          Brainwave.io
+        </Link>
+        <p className="text-[15px] leading-[26px] lg:w-[270px] w-[100%]">
+          With lots of unique blocks, you can easily build a page without
+          coding. Build your next landing page.
         </p>
+        <img src="/Social.svg" alt="socials" />
       </div>
-      <div>
-        <a href="https://twitter.com" className="text-blue-400 hover:underline"> Twitter</a>, 
-          <a href="https://facebook.com" className="text-blue-400 hover:underline"> Facebook</a>, and 
-          <a href="https://instagram.com" className="text-blue-400 hover:underline"> Instagram</a>.
+      <div className="w-[160px] hidden lg:block">
+        <ul className="text-[17px] leading-10 text-white flex-row">
+          <li className=" text-[15px] leading-[26px] mb-5">Company</li>
+          <Link to="/">About us</Link>
+          <Link to="/">Contact us</Link>
+          <Link to="/">Careers</Link>
+          <Link to="/">Press</Link>
+        </ul>
       </div>
-      <div>
-      <div className="footer-columns">
-        <div className="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Careers</li>
-            <li>Press</li>
-          </ul>
-        </div>
-
-        <div className="footer-column">
-          <h3>Product</h3>
-          <ul>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>News</li>
-            <li>Help desk</li>
-          </ul>
-        </div>
-
-        <div className="footer-column">
-          <h3>Services</h3>
-          <ul>
-            <li>Digital Marketing</li>
-            <li>Content Writing</li>
-            <li>SEO for Business</li>
-            <li>UI Design</li>
-          </ul>
-        </div>
-
-        <div className="footer-column">
-          <h3>Legal</h3>
-          <ul>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
-            <li>Return Policy</li>
-          </ul>
-        </div>
+      <div className="w-[160px] hidden lg:block">
+        <ul className="text-[17px] leading-10 text-white flex-row">
+          <li className=" text-[15px] leading-[26px] mb-5">Products</li>
+          <Link to="/">Features</Link>
+          <Link to="/">Pricing</Link>
+          <Link to="/">News</Link>
+          <Link to="/">Help desk</Link>
+          <Link to="/">Support</Link>
+        </ul>
       </div>
-
-      <div className="footer-support">
-        <p>Support</p>
+      <div className="w-[160px] hidden lg:block">
+        <ul className="text-[17px] leading-10 text-white flex-row">
+          <li className=" text-[15px] leading-[26px] mb-5">Services</li>
+          <Link to="/">Digital Marketing</Link>
+          <Link to="/">Content Writing</Link>
+          <Link to="/">SEO For Business</Link>
+          <Link to="/">UI Design</Link>
+        </ul>
       </div>
-</div>
-    </footer>
-  </div>;
+      <div className="w-[160px] hidden lg:block">
+        <ul className="text-[17px] leading-10 text-white flex-row">
+          <li className=" text-[15px] leading-[26px] mb-5">Legal</li>
+          <Link to="/">Privacy Policy</Link>
+          <Link to="/">Terms & Conditions</Link>
+          <Link to="/">Privacy Policy</Link>
+        </ul>
+      </div>
+    </section>
+  );
 };
 
 export default Footer;

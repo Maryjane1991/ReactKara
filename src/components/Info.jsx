@@ -1,52 +1,46 @@
 import React from "react";
-import { useData } from "./context/DataContext";
 import Button from "./mini-components/Button";
 
 const Info = () => {
-  const data = useData();
-  const stats = data.stats;
-  console.log(stats);
   return (
-    <div className="min-h-screen grid grid-cols-3 items-center justify-center bg-slate-100">
+    <section className="min-h-screen grid lg:grid-cols-3 grid-cols-1 items-center justify-center lg:px-[240px] px-4 lg:gap-x-12 py-10">
       <div>
-        <div>
-          <h1 className="font-bold text-5xl leading-[58px]">
-            Make your business powerful with Shade.
-          </h1>
-          <p className="mt-4">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next consultancy website within few minutes.
+        <h3 className="font-bold text-[32px] leading-[44px]">
+          Experienced experts are giving advices.
+        </h3>
+        <p className="text-[19px] leading-[32px]">
+          With lots of unique blocks, you can easily build a page without
+          coding. Build your next landing page.
+        </p>
+        <Button
+          btnText="Learn how we work"
+          className="lg:w-[200px] w-[100%] h-[50px] mt-4"
+        />
+      </div>
+      <div className="mt-5 lg:mt-0 md:items-center md:mx-auto">
+        <img src="/Info_img.svg" alt="" />
+      </div>
+      <div>
+        <div className="md:text-center">
+          <h3 className="font-bold text-[32px] leading-[44px]">1M+</h3>
+          <p className="text-[19px] leading-[32px]">
+            Satisfaction rate comes from our awesome customers.
           </p>
-          <Button
-            btnText={`Learn how we work`}
-            className="w-[200px] h-[59px] mt-8"
-          />
-
-          <span className="text-sm font-bold block mt-7">
-            Watch how we can help
-          </span>
+        </div>
+        <div className="md:text-center">
+          <h3 className="font-bold text-[32px] leading-[44px]">92%</h3>
+          <p className="text-[19px] leading-[32px]">
+            Satisfaction rate comes from our awesome customers.
+          </p>
+        </div>
+        <div className="md:text-center">
+          <h3 className="font-bold text-[32px] leading-[44px]">4.9/5.0</h3>
+          <p className="text-[19px] leading-[32px]">
+            Average customer ratings we have got all over internet.
+          </p>
         </div>
       </div>
-
-      <div>
-        <img src="/Image.svg" alt="" />
-      </div>
-
-      <div>
-        <div>
-          <h3>{stats.customers}</h3>
-          <p>{stats.customerText}</p>
-        </div>
-        <div>
-          <h3>{stats.satisfaction}</h3>
-          <p>{stats.satisfactionText}</p>
-        </div>
-        <div>
-          <h3>{stats.rating}</h3>
-          <p>{stats.ratingText}</p>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 
