@@ -12,13 +12,11 @@ const Info = () => {
           With lots of unique blocks, you can easily build a page without
           coding. Build your next landing page.
         </p>
-        <Button
-          btnText="Learn how we work"
-          className="lg:w-[200px] w-[100%] h-[50px] mt-4"
-        />
+        <button className="lg:w-[200px] w-[100%] h-[50px] mt-4 rounded-md">"Learn how we work"
+          </button>
       </div>
       <div className="mt-5 lg:mt-0 md:items-center md:mx-auto">
-        <img src="/Info_img.svg" alt="" />
+        <img src="/man.svg" alt="" />
       </div>
       <div>
         <div className="md:text-center">

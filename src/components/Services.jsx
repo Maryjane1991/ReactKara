@@ -1,13 +1,13 @@
 import React from "react";
 
 const Services = () => {
-  creturn(
+  return (
     <section className="px-5 md:px-20 my-10 lg:my-0">
       <div className="items-center justify-center lg:px-[300px]">
         <h2 className="font-bold text-4xl leading-[48px] text-center">
           Services we offer for you
         </h2>
-        <p className=" text-[19px] leading-[32px] lg:w-[580px] w-[100%] text-center">
+        <p className="items-center justify-center text-[19px] leading-[32px] lg:w-[580px] w-[100%] text-center">
           With lots of unique blocks, you can easily build a page without
           coding. Build your next landing page.
         </p>
@@ -17,7 +17,7 @@ const Services = () => {
           <h3 className="font-bold text-[21px] leading-[32px]">
             Digital Marketing
           </h3>
-          <img src="/Rectangle.svg" alt="" />
+          <img src="/phone.svg" alt="" />
           <p className="text-[17px] leading-[29px]">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.
@@ -30,7 +30,7 @@ const Services = () => {
           <h3 className="font-bold text-[21px] leading-[32px]">
             Business Growth
           </h3>
-          <img src="/Rectangle 2.svg" alt="" />
+          <img src="/flower.svg" alt="" />
           <p className="text-[17px] leading-[29px]">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.
@@ -43,7 +43,7 @@ const Services = () => {
           <h3 className="font-bold text-[21px] leading-[32px]">
             Content Marketing
           </h3>
-          <img src="/Rectangle 3.svg" alt="" />
+          <img src="/class.svg" alt="" />
           <p className="text-[17px] leading-[29px]">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.

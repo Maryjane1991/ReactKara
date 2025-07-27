@@ -15,18 +15,15 @@ const Hero = () => {
           With lots of unique blocks, you can easily build a page without
           coding. Build your next consultancy website within few minutes.
         </p>
-        <Button
-          btnText={`Get A Free Quote`}
-          className="w-[200px] h-[59px] w-[100%] mt-8"
-        />
-
+        <button className="w-[200px] h-[59px] w-[100%] mt-8">{`Get A Free Quote`}</button>
+      
         <span className="text-sm font-bold block lg:mt-7 md:mt-7 mt-4 text-center">
           Watch how we can help
         </span>
       </div>
 
       <div>
-        <img src="/Rectangle.svg" alt="Hero img" />
+        <img src="/woman.svg" alt="Hero img" />
       </div>
     </section>
   );
